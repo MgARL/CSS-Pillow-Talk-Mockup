@@ -1,3 +1,33 @@
+*{
+  border: 1px solid black;
+}
+
 body {
   background: blanchedalmond;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  gap: 10px;
+}
+
+.b{
+  min-height: 60vh;
+  flex-grow: 4;
+}
+.a, .c {
+  flex-grow: 1;
+}
+
+@media (min-width: 600px) {
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+  }
 }
