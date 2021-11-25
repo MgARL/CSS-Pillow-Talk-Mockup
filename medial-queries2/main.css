@@ -13,12 +13,24 @@ body {
   text-align: center;
 }
 
-.b{
-  min-height: 40vh;
+.be-wrapper{
+  min-height: 60vh;
   flex-grow: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.a, .cde-wrapper, .f {
+.b{
+  min-height: 40vh;
+  flex-grow: 2;
+}
+.cde-wrapper{
+  min-height: 20vh;;
+  flex-grow: 1;
+}
+
+.a, .be-wrapper, .f {
   flex-grow: 1;
 }
 
@@ -33,25 +45,13 @@ body {
 }
 
 @media (min-width: 600px) {
-  .container{
+  .container {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .a {
     width: 100%;
-    flex-grow: 5;
   }
-  .b {
-    min-width: 80%;
-   flex-grow: 1;
-  }
-  .cde-wrapper{
-    flex-grow: 1;
-    min-width: 80%;
-  }
-
-  .f{
-    flex-grow: 3;
-  }
-
 }
+
