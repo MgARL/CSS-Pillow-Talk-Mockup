@@ -1,3 +1,57 @@
+*{
+  border: 1px solid black;
+}
 body {
   background: papayawhip;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 5px;
+  text-align: center;
+}
+
+.b{
+  min-height: 40vh;
+  flex-grow: 4;
+}
+
+.a, .cde-wrapper, .f {
+  flex-grow: 1;
+}
+
+.cde-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.c, .d, .e {
+  width: 32%;
+}
+
+@media (min-width: 600px) {
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+    flex-grow: 5;
+  }
+  .b {
+    min-width: 80%;
+   flex-grow: 1;
+  }
+  .cde-wrapper{
+    flex-grow: 1;
+    min-width: 80%;
+  }
+
+  .f{
+    flex-grow: 3;
+  }
+
 }
